@@ -22,9 +22,10 @@ stage 'build'
 
             
 stage 'Test'
-    
-
-            
-                sh 'make check || true' 
-                junit '/src/test/java/com/techprimers/testing/FizzBuzzTest.java'
+    sh 'make check || true' 
+    junit '/src/test/java/com/techprimers/testing/FizzBuzzTest.java'
+post 
+    always{
+        junit 'build/reports/**/*.xml'
+    }
 }
