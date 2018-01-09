@@ -25,6 +25,6 @@ stage 'Test'
 
 
             
-                sh 'make check || true' 
+                //sh 'make check || true' 
                 junit 'FizzBuzzTest.java'
 }
