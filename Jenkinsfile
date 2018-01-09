@@ -21,10 +21,10 @@ stage 'build'
                 allure results: [[path: 'target/allure-results']]
 
             
-//stage 'Test'
+stage 'Test'
     
 
             
-                //sh 'make check || true' 
+                sh 'make check || true' 
         //junit 'FizzBuzzTest.java'
 }
