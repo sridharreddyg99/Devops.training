@@ -22,9 +22,9 @@ stage 'build'
 
             
 stage 'Test'
-
+    {
 
             
                 //sh 'make check || true' 
-                junit 'FizzBuzzTest.java'
+        junit 'FizzBuzzTest.java'}
 }
